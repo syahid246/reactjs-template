@@ -1,26 +1,27 @@
 import React from 'react';
 import logo from '../../assets/img/logo.svg';
-import styles from './index.module.css';
+import {
+  App, AppHeader, AppLogo, AppLink,
+} from './styled';
 
 export default function Home() {
   return (
-    <div className={styles.App}>
-      <header className={styles.AppHeader}>
-        <img src={logo} className={styles.AppLogo} alt="logo" />
+    <App>
+      <AppHeader>
+        <AppLogo src={logo} alt="logo" />
         <p>
           Edit
           <code> src/App.js </code>
           and save to reload.
         </p>
-        <a
-          className={styles.AppLink}
+        <AppLink
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
-    </div>
+        </AppLink>
+      </AppHeader>
+    </App>
   );
 }
